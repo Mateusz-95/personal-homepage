@@ -1,10 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { ThemeProvider } from "styled-components";
+import Header from "./features/Header";
+import { GlobalStyle } from "./GlobalStyle";
+import { theme } from "./theme";
 
 function App() {
   return (
     <>
-      <p>nic</p>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Header />
+      </ThemeProvider>
     </>
   );
 }
