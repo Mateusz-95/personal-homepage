@@ -55,6 +55,10 @@ export const Text = styled.p`
   font-weight: 400;
 `;
 
+export const EmailLink = styled.a`
+  text-decoration: none;
+`;
+
 export const Button = styled.button`
   display: grid;
   grid-template-columns: auto 1fr;
@@ -64,6 +68,16 @@ export const Button = styled.button`
   align-items: center;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.colors.mainBLue};
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: -2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff,
+      -2px 2px 0px 0px #8cc2ff, 2px -2px 0px 0px #8cc2ff;
+  }
+
+  &:active {
+    box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
+  }
 `;
 
 export const ButtonSvg = styled.img``;

@@ -12,6 +12,7 @@ import {
   Button,
   ButtonSvg,
   ButtonPara,
+  EmailLink,
 } from "./styled";
 import photo from "../../images/profile.jpeg";
 import buttonSvg from "../../images/Message.svg";
@@ -32,10 +33,12 @@ const Header = () => {
             👨🏻‍💻 I am a passionate Frontend Developer in love with React,
             currently looking for new job opportunities.
           </Text>
-          <Button>
-            <ButtonSvg src={buttonSvg} alt="hire me svg" />
-            <ButtonPara>Hire me</ButtonPara>
-          </Button>
+          <EmailLink href="mailto:grygorowiczmusic@gmail.com">
+            <Button>
+              <ButtonSvg src={buttonSvg} alt="hire me svg" />
+              <ButtonPara>Hire me</ButtonPara>
+            </Button>
+          </EmailLink>
         </InfoDiv>
       </ContentWrapper>
     </Wrapper>
