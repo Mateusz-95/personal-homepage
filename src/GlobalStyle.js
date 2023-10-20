@@ -13,8 +13,9 @@ html {
 
 body {
   width: 1368px;
-  max-width: 85%;
+  max-width: 95%;
   margin-top: 115px;
   font-family: Inter;
+  background-color: ${({ theme }) => theme.colors.body}
 }
 `;
